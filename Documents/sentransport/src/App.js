@@ -1,13 +1,24 @@
 import './App.css';
 import Header from './Header';
+import LigneBus from './LigneBus';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <main className="contenu">
-        <p>Bienvenue ! Cette application vous aide a trouver
-        votre ligne de bus a Dakar.</p>
+        <LigneBus
+          numero="15"
+          depart="Parcelles Assainies"
+          arrivee="Plateau"
+          arrets={14}
+        />
+        <LigneBus
+          numero="7"
+          depart="Guediawaye"
+          arrivee="Place Obe"
+          arrets={18}
+        />
       </main>
     </div>
   );
